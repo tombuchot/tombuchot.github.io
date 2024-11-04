@@ -7,12 +7,32 @@
     <title>Tom Buchot</title>
     <style>
         /* Reset */
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; /*font-size: large;*/ }
         
         /* Layout */
-        body { display: flex; align-items: normal; justify-content: left; min-height: 100vh; color: #333333; background-color:  #fff; margin: 0; }
+        body { display: flex; align-items: normal; justify-content: center; min-height: 100vh; color: #333333; background-color:  #fff; margin: 0;}
         .container { width: 100%; max-width: 1000px; padding: 20px; text-align: left; }
         .content-section { padding: 40px 20px; }
+        a { color: #333333; text-decoration: none;}
+        a:hover { color: #333333; text-decoration: underline;}
+        .row {
+        display: flex;
+        }
+        .flex-column {
+            padding: 20px;
+            border-radius: 8px;
+        }        
+        p {
+            margin-bottom: 20px; /* Adjust this value to control space */
+            text-align: justify;
+        }
+        .bold {
+            font-weight: bold; /* Make text bold */
+        }
+        .underline{
+            text-decoration: underline; /* Underline the text */
+        }
+
 
         /* Header */
         header { display: flex; align-items: center; justify-content: space-between; padding: 20px; background-color: #fff;  }
@@ -38,6 +58,7 @@
 </head>
 <body>
 
+        <!-- About Section -->
     <div class="container">
         <!-- Header Section -->
         <header>
@@ -55,15 +76,42 @@
             </nav>
 
         </header>
-    
+
 
         <!-- About Section -->
         <section id="home" class="content-section">
-            <h2 class="section-title">About Me</h2>
-            <p>Brief introduction about yourself, your background, and your expertise. Highlight what makes you unique and mention any relevant skills or interests you want visitors to know about.</p>
+            <h1 class="section-subtitle"> Working papers </h1>
+
+            <p style="line-height: 1.5;" >
+                <p>
+                <span class="bold">
+                    Selective Accountability: Performance Indicators and MPs’ Behavior</span>, with 
+                <a href="https://sites.google.com/site/sophiehatte/"> Charles Louis-Sidois</a> (Vienna University of Economics and Busines) &
+                <a href="https://sites.google.com/site/sophiehatte/"> Elisa
+                Mougin</a> (ENS de Lyon)
+                </p>   
+                <p style="padding-left: 5%" >
+                    Statistical performance indicators have transformed
+                    political coverage. In France, these indicators gained
+                    prominence through Nosdeputes.fr, a website launched in
+                    2009. We provide the first quantitative analysis of their
+                    effects on MPs’ behavior using a comprehensive dataset of
+                    their press coverage. While general coverage boosts
+                    performance across all indicators, mentioned MPs do not show
+                    further improvement. Only the most covered indicators
+                    improved after the website’s launch. We also find mixed
+                    evidence of transparency backfiring: copy-paste questions
+                    increased, but amendments and short interventions aimed at
+                    manipulating indicators did not. Overall, indicators seem to
+                    enhance collective accountability but prompt resistance from
+                    mentioned MPs. 
+                </p> 
+            </p>
+
         </section>
 
     </div>
+
 
 </body>
 </html>

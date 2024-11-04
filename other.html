@@ -7,12 +7,31 @@
     <title>Tom Buchot</title>
     <style>
         /* Reset */
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; /*font-size: large;*/ }
         
         /* Layout */
-        body { display: flex; align-items: normal; justify-content: left; min-height: 100vh; color: #333333; background-color:  #fff; margin: 0; }
+        body { display: flex; align-items: normal; justify-content: center; min-height: 100vh; color: #333333; background-color:  #fff; margin: 0;}
         .container { width: 100%; max-width: 1000px; padding: 20px; text-align: left; }
         .content-section { padding: 40px 20px; }
+        a { color: #333333; text-decoration: none;}
+        a:hover { color: #333333; text-decoration: underline;}
+        .row {
+        display: flex;
+        }
+        .flex-column {
+            padding: 20px;
+            border-radius: 8px;
+        }        
+        p {
+            margin-bottom: 20px; /* Adjust this value to control space */
+            text-align: justify;
+        }
+        .bold {
+            font-weight: bold; /* Make text bold */
+        }
+        .underline{
+            text-decoration: underline; /* Underline the text */
+        }
 
         /* Header */
         header { display: flex; align-items: center; justify-content: space-between; padding: 20px; background-color: #fff;  }
@@ -38,32 +57,60 @@
 </head>
 <body>
 
-    <div class="container">
-        <!-- Header Section -->
-        <header>
-                
-            <!-- Name Link on Left -->
-            <div class="nav-right">
-                <a href="index.html">Tom Buchot</a>
-            </div>
-            <!-- Navigation Links on Left with Separate Pages -->
-            <nav class="nav-left">
-                <a href="index.html">home</a>
-                <a href="research.html">research</a>
-                <a href="teaching.html">teaching</a>
-                <a href="other.html">other</a>
-            </nav>
-
-        </header>
-    
-
         <!-- About Section -->
-        <section id="home" class="content-section">
-            <h2 class="section-title">About Me</h2>
-            <p>Brief introduction about yourself, your background, and your expertise. Highlight what makes you unique and mention any relevant skills or interests you want visitors to know about.</p>
-        </section>
+            <div class="container">
+                <!-- Header Section -->
+                <header>
+                        
+                    <!-- Name Link on Left -->
+                    <div class="nav-right">
+                        <a href="index.html">Tom Buchot</a>
+                    </div>
+                    <!-- Navigation Links on Left with Separate Pages -->
+                    <nav class="nav-left">
+                        <a href="index.html">home</a>
+                        <a href="research.html">research</a>
+                        <a href="teaching.html">teaching</a>
+                        <a href="other.html">other</a>
+                    </nav>
+        
+                </header>
+                <section id="home" class="content-section">
+                    <h1 class="section-subtitle"> Miscellaneous </h1>
+        
+                    <p style="line-height: 1.5;" >
+                        <p style="padding-left: 5%" >
+                            I4R Replication Games - ENS Lyon (2023), "Institute
+                            for Replication. 2024. Meta Database, Version 1."
+                        </p>   
 
-    </div>
+        
+                </section>
+        
+            </div>
+
+<!-- 
+            \textbf{2024 — Pres} \hspace{0.1cm} 
+
+            \phantom{\textbf{2023 — {2024}}} \hspace{0.1cm} ENS de Lyon -- Undergraduate,
+            3rd year
+            
+            \textbf{2023 — Pres} \hspace{0.1cm} Teaching assistant -- Information
+            Economics (Prof. Elisa Mougin, ENS de Lyon)
+            
+            \phantom{\textbf{2023 — {2024}}} \hspace{0.1cm} CPES ENS de Lyon -- Undergraduate, 2nd year
+            
+            \textbf{2023 — Pres} \hspace{0.1cm} Introduction to \LaTeX{}
+            
+            \phantom{\textbf{2023 — {2024}}} \hspace{0.1cm} ENS de Lyon -- Undergraduate, 3rd year
+            
+            \textbf{2023 — 2024} \hspace{0.1cm} Introduction to Economics (shared with
+            Augustin Boone, ENS de Lyon)
+            
+            \phantom{\textbf{2023 — {2024}}} \hspace{0.1cm} ENS de Lyon -- Undergraduate, 3rd year
+            
+             -->
+            
 
 </body>
 </html>
